@@ -95,7 +95,7 @@ const Post = () => {
           </Button>
         </Modal.Footer>
       </Modal>
-            {posts.map((post, index) => {
+           {posts  ?  posts.map((post, index) => {
                 return (
                     <div key={index} style={{ border: "solid grey 0.1px", marginBottom: "1rem" }} >
                         <h2 className='text-center'>{index + 1}</h2>
@@ -107,8 +107,8 @@ const Post = () => {
                         </div>
                     </div>
                 )
+            }):"there is no post"
             }
-            )}
         </div>
     )
 }

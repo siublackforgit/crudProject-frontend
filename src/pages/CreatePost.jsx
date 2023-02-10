@@ -28,7 +28,7 @@ const CreatePost = () => {
             title: post.title,
             content: post.content
         }
-        axios.post("http://localhost:8000/create",newPost)
+        axios.post("https://crudproject-api.onrender.com/create",newPost)
         .then((res)=>{
             console.log(res)
         }).catch((err)=>{

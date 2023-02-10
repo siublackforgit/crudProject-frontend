@@ -18,7 +18,7 @@ const Post = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:8000/post").then(res => {
+        fetch("https://crudproject-api.onrender.com/post").then(res => {
             console.log(res.body.title);
             if (res.ok) {
                 return res.json()
@@ -41,7 +41,7 @@ const Post = () => {
     }
 
     function deletePost(id) {
-        axios.delete(`http://localhost:8000/delete/${id}`)
+        axios.delete(`https://crudproject-api.onrender.com/delete/${id}`)
             .then((res) => { console.log(res) })
             .catch((err) => { console.log(err) })
 
@@ -55,7 +55,7 @@ const Post = () => {
     }
 
     const saveUpdatedPost = ()=>{
-        axios.put(`http://localhost:8000/update/${updatedPost._id}`,updatedPost)
+        axios.put(`https://crudproject-api.onrender.com/update/${updatedPost._id}`,updatedPost)
         .then((res)=>{console.log(res)})
         .catch((err)=>{console.log(err)})
 

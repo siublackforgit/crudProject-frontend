@@ -107,7 +107,7 @@ const Post = () => {
                         </div>
                     </div>
                 )
-            }):"there is no post"
+            }):<h1>"There is no post"</h1>
             }
         </div>
     )

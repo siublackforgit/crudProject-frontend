@@ -41,6 +41,7 @@ const Post = () => {
     }
 
     function deletePost(id) {
+        console.log(id)
         axios.delete(`https://crudproject-api.onrender.com/delete/${id}`)
             .then((res) => { console.log(res) })
             .catch((err) => { console.log(err) })

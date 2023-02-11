@@ -46,7 +46,7 @@ const CreatePost = () => {
             <input type="text" name="content" className='container form-control' placeholder='description' value={post.content} onChange={handleChange} required />
             <button className='btn btn-primary' style={{ width: "100%" }} onClick={handleSubmit}>Create Post</button>
             <button className='btn btn-success'style={{width:"100%"}} onClick={()=>{navigate('/post')}}>Go To Post Page</button>
-            <button className='btn btn-secondary' style={{ width: "100%" }} onClick={() => { navigate(-1) }}>Back</button>
+            <button className='btn btn-secondary' style={{ width: "100%" }} onClick={() => { navigate('/createpost') }}>Back</button>
         </div>
     )
 }

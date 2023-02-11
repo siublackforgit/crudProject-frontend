@@ -65,7 +65,7 @@ const Post = () => {
     return (
         <div className='container'>
             <h1 className='text-center'>Post Page</h1>
-            <button className='btn btn-secondary btn-lg' style={{width:"100%"}} onClick={()=>{navigate(-1)}}>Back</button>
+            <button className='btn btn-secondary btn-lg' style={{width:"100%"}} onClick={()=>{navigate('/')}}>Back</button>
             <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Update a Post</Modal.Title>

@@ -10,14 +10,12 @@ import { BrowserRouter, Routes, Route, hashHistory } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <hashHistory>
-      <BrowserRouter >
+    <hashHistory>      
         <Routes>
           <Route exact path="/" element={<App />} />
           <Route path="/createpost" element={<CreatePost />} />
           <Route path="/post" element={<Post />} />
         </Routes>
-      </BrowserRouter>
     </hashHistory>
   </React.StrictMode>
 

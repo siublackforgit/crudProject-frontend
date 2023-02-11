@@ -56,6 +56,7 @@ const Post = () => {
     }
 
     const saveUpdatedPost = ()=>{
+        console.log(updatedPost)
         axios.put(`https://crudproject-api.onrender.com/update/${updatedPost._id}`,updatedPost)
         .then((res)=>{console.log(res)})
         .catch((err)=>{console.log(err)})

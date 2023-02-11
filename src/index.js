@@ -5,19 +5,22 @@ import App from './App';
 import CreatePost from './pages/CreatePost';
 import Post from './pages/Post';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter,Routes,Route,hashHistory} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, hashHistory } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter history={hashHistory}>
-    <Routes>
-      <Route path="/" element={<App/>} />
-      <Route path="/createpost" element={<CreatePost/>}/>
-      <Route path="/post" element={<Post/>}/>         
-    </Routes>
-    </BrowserRouter>
+    <hashHistory>
+      <BrowserRouter >
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/createpost" element={<CreatePost />} />
+          <Route path="/post" element={<Post />} />
+        </Routes>
+      </BrowserRouter>
+    </hashHistory>
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

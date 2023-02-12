@@ -62,7 +62,7 @@ const Post = () => {
         .catch((err)=>{console.log(err)})
 
         handleClose();
-        window.location.reload();
+        
     }
     return (
         <div className='container'>
